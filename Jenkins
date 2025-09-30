@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "dipali1904/my-web-app"
+        IMAGE_NAME = "satyajitp2509/webapp"
         IMAGE_TAG = "latest"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/DipaliGhadage1904/my-web-app.git'
+                git branch: 'master', url: 'https://github.com/Satyajitp2509/webapp.git'
             }
         }
 
